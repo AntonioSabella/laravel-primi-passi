@@ -13,6 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('welcome');
+}); */
+
+Route::get('/', function () {
+    $name = 'Antonio';
+    $surname = 'Sabella';
+    $role = 'Boolean Student';
+    $passions = 'Writing';
+    $informations = [
+        'name' => 'Antonio',
+        'surname' => 'Sabella',
+        'role'=> 'Boolean Student',
+        'age'=> 30
+    ];
+    return view('home', compact('name','surname','role', 'passions', 'informations'));
 });
