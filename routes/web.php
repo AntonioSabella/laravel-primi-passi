@@ -31,6 +31,18 @@ Route::get('/home', function () {
     return view('home', compact('name','surname','role', 'passions', 'informations'));
 });
 
-Route::view("/about", "about");
+Route::get('/about', function () {
+    $address = 'Via degli affari tuoi';
+  
+    return view('about', compact('address'));
+});
 
-Route::view("/contacts", "contacts");
+Route::get('/contacts', function () {
+    $description = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In eos aperiam quisquam quod consequuntur officiis illo, similique elgendi ducimus quidem.';
+  
+    return view('contacts', compact('description'));
+});
+
+/* Route::view("/about", "about");
+
+Route::view("/contacts", "contacts"); */

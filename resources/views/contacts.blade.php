@@ -26,7 +26,19 @@
             background-color: bisque;
             text-align: center;
             border-radius: 0.5rem;
-            margin-top: 5rem;
+            margin-top: 3rem;
+        }
+
+        .container_jumbo {
+            width: 1000px;
+            background-image: url('https://picsum.photos/700/300');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 300px;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
         }
 
         h1 {
@@ -35,6 +47,15 @@
         }
         nav {
             text-align: center;
+            display: flex;
+            column-gap: 1rem;
+            align-items: center;
+            justify-content:center;
+            padding: 1rem;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+            color: cornflowerblue;
         }
         ul {
             display: flex;
@@ -59,10 +80,18 @@
 <nav>
         <a href="/home">Home</a>
         <a href="/about">About</a>
-        <a href="/">Contacts</a>
+        <a href="/contacts">Contacts</a>
 
 </nav>
-  <h1>Contacts</h1>
+    <div class="container_jumbo">
+         <h1>Contacts</h1>
+    </div>
+
+    <div class="container">
+        <h2>That's me:</h2>
+        <p>{{$description}}</p>
+    </div>
+
     
    
 
