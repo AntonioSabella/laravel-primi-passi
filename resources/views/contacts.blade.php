@@ -56,27 +56,16 @@
     </style>
 </head>
 <body>
-    <nav>
-        <a href="/">Home</a>
+<nav>
+        <a href="/home">Home</a>
         <a href="/about">About</a>
-        <a href="/contacts">Contacts</a>
+        <a href="/">Contacts</a>
 
-    </nav>
-    <h1>Home</h1>
-    <div class="container">
-    <h2>Hello World!</h2>
-    <ul>
-        <li><a href="#">{{ $name }}</a></li>
-        <li><a href="#">{{ $surname }}</a></li>
-        <li><a href="#">{{ $role }}</a></li>
-        <li><a href="#">{{ $passions }}</a></li>
+</nav>
+  <h1>Contacts</h1>
+    
+   
 
-    </ul>
-    <ul>
-        @foreach ($informations as $key => $value)
-            <li><strong>{{$key}}</strong> : {{$value}}</li>
-        @endforeach
-    </ul>
     </div>
 </body>
 </html>

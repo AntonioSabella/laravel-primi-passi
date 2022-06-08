@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 }); */
 
-Route::get('/', function () {
+Route::get('/home', function () {
     $name = 'Antonio';
     $surname = 'Sabella';
     $role = 'Boolean Student';
@@ -30,3 +30,7 @@ Route::get('/', function () {
     ];
     return view('home', compact('name','surname','role', 'passions', 'informations'));
 });
+
+Route::view("/about", "about");
+
+Route::view("/contacts", "contacts");

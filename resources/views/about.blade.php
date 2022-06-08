@@ -33,6 +33,7 @@
             margin-bottom: 1rem;
             text-align: center;
         }
+
         nav {
             text-align: center;
         }
@@ -56,27 +57,16 @@
     </style>
 </head>
 <body>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
+<nav>
+        <a href="/home">Home</a>
+        <a href="/">About</a>
         <a href="/contacts">Contacts</a>
 
-    </nav>
-    <h1>Home</h1>
-    <div class="container">
-    <h2>Hello World!</h2>
-    <ul>
-        <li><a href="#">{{ $name }}</a></li>
-        <li><a href="#">{{ $surname }}</a></li>
-        <li><a href="#">{{ $role }}</a></li>
-        <li><a href="#">{{ $passions }}</a></li>
+</nav>
+  <h1>About</h1>
+    
+   
 
-    </ul>
-    <ul>
-        @foreach ($informations as $key => $value)
-            <li><strong>{{$key}}</strong> : {{$value}}</li>
-        @endforeach
-    </ul>
     </div>
 </body>
 </html>
